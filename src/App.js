@@ -30,6 +30,9 @@ function App() {
       })
     );
   };
+  const deleteList = () =>{
+    setToDoList([]);
+  }
 
   return (
     <div className="App">
@@ -50,6 +53,7 @@ function App() {
           );
         })}
       </div>
+      <button onClick={deleteList}>Delete All</button>
     </div>
   );
 }
